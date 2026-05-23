@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shahnawaz Hussain — Digital Marketer & Web Developer</title>
+  <meta name="description" content="Portfolio of MD Shahnawaz Hussain — Digital Marketer, Web Developer & AI Project Builder from Bhagalpur, India."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Cabinet+Grotesk:wght@300;400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- NOISE OVERLAY -->
+  <div class="noise"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">SH<span>.</span></div>
+    <div class="nav-links">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+    <a href="mailto:mdshahnawazhussain32@gmail.com" class="nav-cta">Hire Me</a>
+    <button class="nav-burger" id="navBurger">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mob-link">About</a>
+    <a href="#skills" class="mob-link">Skills</a>
+    <a href="#projects" class="mob-link">Projects</a>
+    <a href="#contact" class="mob-link">Contact</a>
+  </div>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="hero">
+    <canvas id="heroCanvas"></canvas>
+
+    <div class="hero-bg-text">PORTFOLIO</div>
+
+    <div class="hero-content">
+      <div class="hero-tag reveal">
+        <span class="tag-dot"></span>
+        Available for work
+      </div>
+
+      <h1 class="hero-name reveal delay-1">
+        <span class="name-line">MD SHAHNAWAZ</span>
+        <span class="name-line accent-stroke">HUSSAIN</span>
+      </h1>
+
+      <div class="hero-roles reveal delay-2">
+        <span class="role-static">I build </span>
+        <span class="role-cycle" id="roleCycle">AI Platforms</span>
+      </div>
+
+      <p class="hero-desc reveal delay-3">
+        Digital Marketer & Web Developer crafting AI-powered experiences.<br/>
+        Based in Bhagalpur, India — working globally.
+      </p>
+
+      <div class="hero-actions reveal delay-4">
+        <a href="#projects" class="btn-primary">
+          <span>View Work</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn-ghost">Get In Touch</a>
+      </div>
+
+      <div class="hero-stats reveal delay-5">
+        <div class="stat-item">
+          <span class="stat-n" data-count="4">0</span>
+          <span class="stat-l">Live Projects</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat-item">
+          <span class="stat-n" data-count="300">0</span><span class="stat-n-plus">+</span>
+          <span class="stat-l">Blog Visitors/Mo</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat-item">
+          <span class="stat-n" data-count="2">0</span>
+          <span class="stat-l">Certifications</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+
+    <!-- Floating elements -->
+    <div class="float-el fe1">AI</div>
+    <div class="float-el fe2">SEO</div>
+    <div class="float-el fe3">&lt;/&gt;</div>
+    <div class="float-el fe4">API</div>
+  </section>
+
+  <!-- ═══ MARQUEE ═══ -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>Digital Marketing</span><span class="mx">✦</span>
+      <span>Web Development</span><span class="mx">✦</span>
+      <span>AI Integration</span><span class="mx">✦</span>
+      <span>SEO Strategy</span><span class="mx">✦</span>
+      <span>Content Marketing</span><span class="mx">✦</span>
+      <span>Google Gemini API</span><span class="mx">✦</span>
+      <span>React</span><span class="mx">✦</span>
+      <span>JavaScript</span><span class="mx">✦</span>
+      <span>Digital Marketing</span><span class="mx">✦</span>
+      <span>Web Development</span><span class="mx">✦</span>
+      <span>AI Integration</span><span class="mx">✦</span>
+      <span>SEO Strategy</span><span class="mx">✦</span>
+      <span>Content Marketing</span><span class="mx">✦</span>
+      <span>Google Gemini API</span><span class="mx">✦</span>
+      <span>React</span><span class="mx">✦</span>
+      <span>JavaScript</span><span class="mx">✦</span>
+    </div>
+  </div>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-left">
+          <div class="section-chip reveal">About Me</div>
+          <h2 class="section-title reveal delay-1">
+            I CRAFT<br/>
+            <span class="accent">DIGITAL</span><br/>
+            EXPERIENCES
+          </h2>
+          <div class="about-img-wrap reveal delay-2">
+            <div class="about-img-placeholder">
+              <div class="img-initials">SH</div>
+              <div class="img-ring ring1"></div>
+              <div class="img-ring ring2"></div>
+              <div class="img-ring ring3"></div>
+            </div>
+            <div class="about-img-tag">
+              <span class="tag-dot"></span>
+              BCA Graduate 2025
+            </div>
+          </div>
+        </div>
+
+        <div class="about-right">
+          <p class="about-text reveal delay-2">
+            I'm a BCA graduate from Tilkamanjhi Bhagalpur University who builds real things. Not tutorials — actual deployed AI-powered platforms that people use.
+          </p>
+          <p class="about-text reveal delay-3">
+            I combine <strong>Digital Marketing expertise</strong> (SEO, content strategy, social media) with <strong>Web Development skills</strong> (HTML, CSS, JS, React, AI APIs) to create products that both work and get found.
+          </p>
+          <p class="about-text reveal delay-4">
+            My tech blog grew to <strong>300+ monthly visitors in 3 months</strong> — not through luck, but through understanding how content and code work together.
+          </p>
+
+          <div class="about-links reveal delay-5">
+            <a href="https://github.com/mdshahnawaz874-cloud" target="_blank" class="about-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/md-shahnawaz-hussain-0a260a3a1" target="_blank" class="about-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="mailto:mdshahnawazhussain32@gmail.com" class="about-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Email
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SKILLS ═══ -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-chip reveal">Expertise</div>
+      <h2 class="section-title reveal delay-1">WHAT I <span class="accent">DO</span></h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-card reveal delay-1">
+          <div class="skill-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3 class="skill-title">Digital Marketing</h3>
+          <p class="skill-desc">SEO/SEM, content marketing, social media campaigns, keyword research, Google Analytics, on-page optimization.</p>
+          <div class="skill-tags">
+            <span>SEO</span><span>SEM</span><span>Content</span><span>Analytics</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal delay-2">
+          <div class="skill-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3 class="skill-title">Web Development</h3>
+          <p class="skill-desc">HTML5, CSS3, JavaScript, React, REST APIs, responsive design, Git, GitHub, Netlify deployment.</p>
+          <div class="skill-tags">
+            <span>HTML5</span><span>CSS3</span><span>JS</span><span>React</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal delay-3">
+          <div class="skill-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3 class="skill-title">AI Integration</h3>
+          <p class="skill-desc">Google Gemini API, Groq, OpenRouter, multi-model fallback systems, structured JSON prompting, AI-powered apps.</p>
+          <div class="skill-tags">
+            <span>Gemini</span><span>Groq</span><span>APIs</span><span>AI Apps</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- TECH STACK -->
+      <div class="tech-stack reveal delay-4">
+        <div class="tech-label">Tech Stack</div>
+        <div class="tech-items">
+          <div class="tech-item">HTML5</div>
+          <div class="tech-item">CSS3</div>
+          <div class="tech-item">JavaScript</div>
+          <div class="tech-item">React</div>
+          <div class="tech-item">Tailwind</div>
+          <div class="tech-item">Supabase</div>
+          <div class="tech-item">Git</div>
+          <div class="tech-item">Netlify</div>
+          <div class="tech-item">Gemini API</div>
+          <div class="tech-item">Astro</div>
+          <div class="tech-item">Canva</div>
+          <div class="tech-item">MS Office</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ PROJECTS ═══ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-chip reveal">Work</div>
+      <h2 class="section-title reveal delay-1">LIVE <span class="accent">PROJECTS</span></h2>
+
+      <div class="projects-grid">
+
+        <div class="project-card project-featured reveal delay-1">
+          <div class="proj-num">01</div>
+          <div class="proj-glow"></div>
+          <div class="proj-content">
+            <div class="proj-tags">
+              <span class="proj-tag">AI Platform</span>
+              <span class="proj-tag">2025</span>
+            </div>
+            <h3 class="proj-title">HireMind AI</h3>
+            <p class="proj-desc">AI-powered career intelligence platform with ATS Resume Scorer, Mock Interview system, and Career Coach — built with Google Gemini 2.0.</p>
+            <div class="proj-tech">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Gemini API</span>
+            </div>
+          </div>
+          <div class="proj-links">
+            <a href="https://mdshahnawaz874-cloud.github.io/HireMindAI/" target="_blank" class="proj-btn">
+              Live Demo →
+            </a>
+            <a href="https://github.com/mdshahnawaz874-cloud" target="_blank" class="proj-btn-ghost">GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-2">
+          <div class="proj-num">02</div>
+          <div class="proj-content">
+            <div class="proj-tags">
+              <span class="proj-tag">SaaS</span>
+              <span class="proj-tag">2025</span>
+            </div>
+            <h3 class="proj-title">ResumeAI</h3>
+            <p class="proj-desc">Full-stack AI resume builder SaaS with ATS checker, job matcher, PDF export, and multi-AI key rotation using Gemini, Groq, and OpenRouter.</p>
+            <div class="proj-tech">
+              <span>React</span><span>Supabase</span><span>Tailwind</span><span>Multi-AI</span>
+            </div>
+          </div>
+          <div class="proj-links">
+            <a href="https://resumeeaio.netlify.app/" target="_blank" class="proj-btn">Live Demo →</a>
+            <a href="https://github.com/mdshahnawaz874-cloud" target="_blank" class="proj-btn-ghost">GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-3">
+          <div class="proj-num">03</div>
+          <div class="proj-content">
+            <div class="proj-tags">
+              <span class="proj-tag">Business</span>
+              <span class="proj-tag">2024</span>
+            </div>
+            <h3 class="proj-title">Dry Bazaar</h3>
+            <p class="proj-desc">Business website for a local car detailing studio in Bhagalpur with full SEO optimization, Open Graph tags, and mobile-first design.</p>
+            <div class="proj-tech">
+              <span>HTML5</span><span>CSS3</span><span>JS</span><span>SEO</span>
+            </div>
+          </div>
+          <div class="proj-links">
+            <a href="https://drybazaar.netlify.app/" target="_blank" class="proj-btn">Live Demo →</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-4">
+          <div class="proj-num">04</div>
+          <div class="proj-content">
+            <div class="proj-tags">
+              <span class="proj-tag">Blog</span>
+              <span class="proj-tag">Ongoing</span>
+            </div>
+            <h3 class="proj-title">Build With AI</h3>
+            <p class="proj-desc">Tech blog covering AI tools, web development, and career growth. Grew to 300+ monthly visitors in 3 months through SEO and content strategy.</p>
+            <div class="proj-tech">
+              <span>Astro</span><span>GitHub Pages</span><span>SEO</span>
+            </div>
+          </div>
+          <div class="proj-links">
+            <a href="https://mdshahnawaz874-cloud.github.io/" target="_blank" class="proj-btn">Visit Blog →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CERTIFICATIONS ═══ -->
+  <section class="section section-dark" id="certs">
+    <div class="container">
+      <div class="section-chip reveal">Credentials</div>
+      <h2 class="section-title reveal delay-1">CERTIFI<span class="accent">CATIONS</span></h2>
+
+      <div class="certs-grid">
+        <div class="cert-card reveal delay-1">
+          <div class="cert-logo">fCC</div>
+          <div class="cert-info">
+            <h4 class="cert-title">Responsive Web Design</h4>
+            <p class="cert-org">freeCodeCamp</p>
+            <p class="cert-date">2026</p>
+          </div>
+          <a href="https://www.freecodecamp.org/certification/fcc-89359110-e171-4f62-b3d2-95c7a7addbf1/responsive-web-design" target="_blank" class="cert-verify">Verify →</a>
+        </div>
+
+        <div class="cert-card reveal delay-2">
+          <div class="cert-logo">TCS</div>
+          <div class="cert-info">
+            <h4 class="cert-title">Communication Skills</h4>
+            <p class="cert-org">TCS iON — Tata Consultancy Services</p>
+            <p class="cert-date">May 2026</p>
+          </div>
+          <div class="cert-verify">Verified ✓</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-wrap">
+        <div class="contact-left reveal">
+          <div class="section-chip">Contact</div>
+          <h2 class="section-title">LET'S<br/><span class="accent">WORK</span><br/>TOGETHER</h2>
+          <p class="contact-desc">Open to Digital Marketing and Web Development roles — remote or anywhere in India.</p>
+
+          <div class="contact-items">
+            <a href="mailto:mdshahnawazhussain32@gmail.com" class="contact-item reveal delay-1">
+              <div class="ci-icon">✉</div>
+              <div>
+                <div class="ci-label">Email</div>
+                <div class="ci-val">mdshahnawazhussain32@gmail.com</div>
+              </div>
+            </a>
+            <a href="tel:+916203500102" class="contact-item reveal delay-2">
+              <div class="ci-icon">📱</div>
+              <div>
+                <div class="ci-label">Phone</div>
+                <div class="ci-val">+91 6203500102</div>
+              </div>
+            </a>
+            <div class="contact-item reveal delay-3">
+              <div class="ci-icon">📍</div>
+              <div>
+                <div class="ci-label">Location</div>
+                <div class="ci-val">Bhagalpur, Bihar, India</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links reveal delay-4">
+            <a href="https://github.com/mdshahnawaz874-cloud" target="_blank" class="social-btn">GitHub</a>
+            <a href="https://www.linkedin.com/in/md-shahnawaz-hussain-0a260a3a1" target="_blank" class="social-btn">LinkedIn</a>
+            <a href="https://mdshahnawaz874-cloud.github.io/" target="_blank" class="social-btn">Blog</a>
+          </div>
+        </div>
+
+        <div class="contact-right reveal delay-2">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label class="form-label">Your Name</label>
+              <input type="text" class="form-input" placeholder="John Doe" required/>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email Address</label>
+              <input type="email" class="form-input" placeholder="john@company.com" required/>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Subject</label>
+              <input type="text" class="form-input" placeholder="Job Opportunity / Project"/>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Message</label>
+              <textarea class="form-textarea" rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">
+              <span>Send Message</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">SH<span>.</span></div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <a href="https://mdshahnawaz874-cloud.github.io/HireMindAI/" target="_blank">HireMind AI</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 MD Shahnawaz Hussain. Built with HTML, CSS & JavaScript.</p>
+        <p>Bhagalpur, India 🇮🇳</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
